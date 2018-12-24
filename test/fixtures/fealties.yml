@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Player_id: 1
+  Khan_id: 1
+
+two:
+  Player_id: 1
+  Khan_id: 1

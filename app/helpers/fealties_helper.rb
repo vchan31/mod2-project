@@ -1,0 +1,2 @@
+module FealtiesHelper
+end

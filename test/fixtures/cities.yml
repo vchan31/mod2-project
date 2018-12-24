@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Khan_id: 1
+  wealth: 1
+  population: 1
+  defenders: 1
+  bio: MyText
+
+two:
+  Khan_id: 1
+  wealth: 1
+  population: 1
+  defenders: 1
+  bio: MyText

@@ -1,0 +1,2 @@
+class SiegesController < ApplicationController
+end

@@ -1,0 +1,2 @@
+class FealtiesController < ApplicationController
+end
