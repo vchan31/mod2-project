@@ -15,4 +15,6 @@ end
 
 
 
+has_secure_password
+
 end #of class definition 
