@@ -1,2 +1,0 @@
-class FealtiesController < ApplicationController
-end

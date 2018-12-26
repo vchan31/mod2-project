@@ -11,5 +11,10 @@ class Khan < ApplicationRecord
 	has_many :players
 
 
+def attack_enemy(arg)
+	
+end
+
+
 
 end

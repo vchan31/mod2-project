@@ -16,4 +16,9 @@ get '/players/', to: 'players#index', as: 'player_index'
 get '/players/:id', to: 'players#show', as: 'player'
 
 
+get '/cities/', to: 'cities#index', as: 'city_index'
+
+
+
+
 end
