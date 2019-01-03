@@ -1,0 +1,18 @@
+<h1>Results of <%=@battle%> !</h1>
+
+<h2> Winner: <%=@winner.name%>!!</h2>
+<h2> Defeated: <%=@loser.name%>!!</h2>
+
+<p><%=@winner.name%> now has <%= @winner.army_size%>men left!!</p>
+<br>
+and
+<br>
+<p><%=@loser.name%> now has <%= @loser.army_size%>men left!!</p>
+
+<br>
+
+What a battle1!!!211One!1
+
+<br>
+<br>
+<%= link_to "return to your actions", "/players/action/#{@battle.player_id}" %>

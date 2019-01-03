@@ -1,0 +1,13 @@
+<h1>STUFF YOU CAN DO! oh lord, <%=@player.name%></h1>
+
+1. <%= link_to 'join a lord', "/join/#{@player.id}" %><br>
+2. <%= link_to 'convince your Khan to attack another Khan!', "/battle/#{@player.id}" %><br>
+3. <%= link_to 'convince your Khan to siege a city!', "/siege/#{@player.id}" %><br>
+<br>
+4. train yourself!
+
+<br>
+<br>
+<%= link_to 'your bio', player_path(@player) %><br>
+<%= link_to 'splashpage', splash_path %>
+

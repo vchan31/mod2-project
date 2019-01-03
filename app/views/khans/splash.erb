@@ -4,3 +4,14 @@
 <%= link_to 'Khans', khan_index_path%> <br>
 <%= link_to 'Vassals', player_index_path%><br>
 <%= link_to 'Cities', city_index_path%>
+
+<br>
+<br>
+
+<%= form_tag ({controller: 'players', action: 'show_action', method: 'post'}) do %>
+  <input name=name>
+  <input type=submit value='login'>
+<% end %>
+
+<br>
+<%= link_to 'Create a new Character!', new_player_path%>

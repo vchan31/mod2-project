@@ -10,6 +10,8 @@ def show
 
 end
 
+def splash
+end
 
 
 end #of class

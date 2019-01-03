@@ -10,17 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_23_200247) do
+ActiveRecord::Schema.define(version: 2019_01_02_223614) do
 
   create_table "battles", force: :cascade do |t|
     t.integer "attacker_id"
     t.integer "attackee_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "player_id"
   end
 
   create_table "cities", force: :cascade do |t|
-    t.integer "khan_id"
     t.integer "wealth"
     t.integer "population"
     t.integer "defenders"
@@ -46,12 +46,14 @@ ActiveRecord::Schema.define(version: 2018_12_23_200247) do
     t.text "bio"
     t.integer "age"
     t.string "vocation"
-    t.integer "exp"
-    t.string "gender"
-    t.integer "gold"
-    t.integer "khan_id"
+    t.integer "exp", default: 0
+    t.string "gender", default: ""
+    t.integer "gold", default: 0
+    t.integer "khan_id", default: 6
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "email", default: ""
+    t.string "password_digest", default: ""
   end
 
   create_table "sieges", force: :cascade do |t|
@@ -59,6 +61,7 @@ ActiveRecord::Schema.define(version: 2018_12_23_200247) do
     t.integer "city_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "player_id"
   end
 
 end

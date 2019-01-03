@@ -6,7 +6,7 @@ class Khan < ApplicationRecord
 	has_many :attackers, through: :attacking_khans
 
 	has_many :sieges
-	has_many :cities
+	has_many :cities, through: :sieges
 
 	has_many :players
 

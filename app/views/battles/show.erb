@@ -1,0 +1,28 @@
+<h1><%= @attacker.name%> VS. <%= @attackee.name%></h1>
+<p>vassal: <%= @player.name %></p>
+
+<h2> Let Battle be join!! <br>
+ The two rival Khan forces have massed and are ready for a pitched battle!!11!one!!1</h2>
+
+<h3>The two forces are as such!</h3>
+<br>
+The aggressor Khan:<%=@attacker.name%><br>
+troop strength:<%=@attacker.army_size%><br>
+experience:<%=@attacker.experience%><br>
+general rating:<%=@attacker.rating_star%><br>
+<br>
+<br>
+<br>
+The defending Khan:<%=@attackee.name%><br>
+troop strength:<%=@attackee.army_size%><br>
+experience:<%=@attackee.experience%><br>
+general rating:<%=@attackee.rating_star%><br>
+
+
+<br>
+<p>Your Khan has decided to engage! Charge the enemy!</p>
+<p>Resolve the battle!</p>
+<%= button_to('Engage!', resolve_path(@battle), method: "get") %>
+
+<p>On a second evaluation, it has been decided unwise by you, your Khan and his war counsel to engage the enemy! The only infliction that will be had will be on your pride this day...</p>
+<%= link_to "retreat from the battle!", "/players/action/#{@player.id}" %>

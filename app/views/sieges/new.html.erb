@@ -1,0 +1,15 @@
+<h2>Huzzah, <%= @player.name %>, you have discussed at length with your Khan and you have successfully convinced him that his next move should be to besiege a city ripe with potential for plunderings!! After careful planning and map researching, the unfortunate denizens of the city you plan on scaling the walls will be decided!!</h2>
+
+<br>
+<br>
+
+<%= form_for @siege do |f| %>
+
+
+Your Khan: <%= f.collection_select :khan_id, @khans, :id, :name %><br>
+Your City of choice: <%= f.collection_select :city_id, @cities, :id, :name %><br>
+Your name: <%= f.collection_select :player_id, @players, :id, :name %><br>
+<br>
+<%= f.submit %>
+
+<% end %>

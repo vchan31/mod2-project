@@ -1,0 +1,30 @@
+<h1><%= @khan.name%> sieging <%= @city.name%></h1>
+<p>vassal: <%= @player.name %></p>
+
+<h2> Prepare for the siege!! 
+</h2>
+
+<h3>Your forces have encircled the enemy city! Gate rams, ladders, and siege towers materials are being gathered and scematics are being drawn up!</h3>
+
+
+<h3>As you survey is complete, the following statistics are before you!</h3>
+<br>
+The assulting Khan:<%=@khan.name%><br>
+troop strength:<%=@khan.army_size%><br>
+experience:<%=@khan.experience%><br>
+general rating:<%=@khan.rating_star%><br>
+<br>
+<br>
+<br>
+The defending City:<%=@city.name%><br>
+number of Defenders:<%=@city.defenders%><br>
+
+
+
+<br>
+<p>Your Khan has decided to commence with the siege!! Scale the walls of City!</p>
+<p>Resolve the siege!</p>
+<%= button_to('Engage!', resolve_siege_path(@siege), method: "get") %>
+
+<p>On a second evaluation, it has been decided unwise by you, your Khan and his war counsel to assult the city, the defenses are too many and our supplies are to limit! ....</p>
+<%= link_to "retreat from the city!", "/players/action/#{@player.id}" %>

@@ -1,0 +1,14 @@
+<h2>Haha! <%= @player.name%> You have decided to swear fealty to a noble Khan! A new Adventenure of potential vast riches await you!!!!</h2>
+
+
+<p>To whom do you which to swear an oath to!? </p>
+<br>
+<%= form_for @player do |f| %>
+<%= f.collection_select :khan_id, @khans, :id, :name %>
+<%= f.submit %>
+<% end %>
+
+
+
+
+
