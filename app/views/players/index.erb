@@ -1,7 +1,33 @@
-<h1> The Vassals! </h1>
+<div class='vassal_index_bg'>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+  </div>
 
+
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading"><strong>The Vassals!</strong></h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+    </div>
+  </section>
+<br><br><br>
+<br>
+
+<div class="background">
+  <div class="transbox">
+<div class="center">
 <% @players.each do |player| %>
 
-<%= link_to player.name, player %> <br>
+<strong><%= link_to player.name, player %> </strong><br>
 
 <%end%>
+</div>
+</div>
+</div>
+
+
+
+</div>

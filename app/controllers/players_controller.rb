@@ -44,6 +44,13 @@ def join_khan
 	render :join
 end
 
+def destroy
+@player = Player.find(params[:id])
+@player.destroy
+
+redirect_to '/superawesomefuntime/'
+end
+
 private
 
 	def player_params

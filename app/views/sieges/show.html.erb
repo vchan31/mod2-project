@@ -24,7 +24,7 @@ number of Defenders:<%=@city.defenders%><br>
 <br>
 <p>Your Khan has decided to commence with the siege!! Scale the walls of City!</p>
 <p>Resolve the siege!</p>
-<%= button_to('Engage!', resolve_siege_path(@siege), method: "get") %>
+<%= button_to('Engage!', resolve_siege_path(@siege), method: "get", class: "btn btn-primary") %>
 
 <p>On a second evaluation, it has been decided unwise by you, your Khan and his war counsel to assult the city, the defenses are too many and our supplies are to limit! ....</p>
 <%= link_to "retreat from the city!", "/players/action/#{@player.id}" %>

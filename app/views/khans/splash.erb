@@ -1,17 +1,70 @@
-<h1>SUPERAWESOMEFUNTIME</h1>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+  </div>
 
 
-<%= link_to 'Khans', khan_index_path%> <br>
-<%= link_to 'Vassals', player_index_path%><br>
-<%= link_to 'Cities', city_index_path%>
-
-<br>
-<br>
-
-<%= form_tag ({controller: 'players', action: 'show_action', method: 'post'}) do %>
+<div class='splash-bg'>
+	
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading"><strong>Welcome to Caledonia!</strong></h1>
+      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+      <p>
+        <%= link_to 'Create a New Character!', new_player_path, class: "btn btn-primary" %>
+      </p>
+      <%= form_tag ({controller: 'players', action: 'show_action', method: 'post'}) do %>
   <input name=name>
   <input type=submit value='login'>
 <% end %>
+    </div>
+  </section>
 
+
+	<img src="/assets/Triceratops_scale.png" alt="This should be a photo of a Triceratops to scale!"><br>
+
+
+<div class="album py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				
+				<div class="card" style="width: 25vw; height:33vw;">
+				  <img src="/assets/splash_khan.jpg" class="card-img-top" alt="Khan image">
+				    <div class="card-body">
+				    <h3 class="card-title">Khans</h3>
+				    <p class="card-text">Big bad boiiiii.</p>
+				    <%= link_to 'Khans', khan_index_path, class: "btn btn-primary" %> <br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 25vw;">
+				  <img src="/assets/splash_vassal.jpg" class="card-img-top" alt="Vassal image">
+				    <div class="card-body">
+				    <h3 class="card-title">Vassals</h3>
+				    <p class="card-text">Small bad boiiiii.</p>
+				    <%= link_to 'Vassals', player_index_path, class: "btn btn-primary" %> <br>
+				  </div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 33vw;">
+				  <img src="/assets/splash_cities.jpg" class="card-img-top" alt="City image">
+				    <div class="card-body">
+				    <h3 class="card-title">Cities</h3>
+				    <p class="card-text">Come visit!</p>
+				    <%= link_to 'Cities', city_index_path, class: "btn btn-primary" %> <br>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <br>
-<%= link_to 'Create a new Character!', new_player_path%>
+<br>
+
+
+</div>

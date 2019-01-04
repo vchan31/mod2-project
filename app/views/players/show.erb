@@ -1,7 +1,28 @@
-<h1>  <%= @player.name %> </h1>
+<div class='vassalshow-bg'>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+ </div>
+<br><br>
+<br>
+<br>
+
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading"><strong><%= @player.name %></strong></h1>
+      <p class="lead text-muted"><%= @player.bio %></p>
+    </div>
+  </section>
+<br><br><br>
+<br>
+<br>
 
 
-Bio:<%= @player.bio %><br>
+<div class="background">
+  <div class="transbox">
+<div class="center">
 Age:<%= @player.age %><br>
 Vocation:<%= @player.vocation %><br>
 Experience:<%= @player.exp %><br>
@@ -9,3 +30,17 @@ Gender:<%= @player.gender %><br>
 Gold:<%= @player.gold %><br>
 Following:<%= @player.khan.name %><br>
 
+
+</div>
+</div>
+</div>
+
+
+
+
+<br><br><br>
+<br>
+<%= button_to('Delete player', player_path(@player), method: "delete") %>
+
+
+</div>

@@ -13,6 +13,7 @@ get '/players/', to: 'players#index', as: 'player_index'
 get '/player/new', to: 'players#new', as: 'new_player'
 post 'players', to: 'players#create'
 get '/players/:id', to: 'players#show', as: 'player'
+delete '/players/:id', to: 'players#destroy'
 
 post '/players/action/', to: 'players#show_action'
 get 'players/action/:id', to: 'players#show_action', as: 'player_action'

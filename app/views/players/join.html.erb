@@ -1,14 +1,45 @@
-<h2>Haha! <%= @player.name%> You have decided to swear fealty to a noble Khan! A new Adventenure of potential vast riches await you!!!!</h2>
+<div class='khanshow-bg'>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+  </div>
+<br><br>
+<br>
+<br>
 
 
-<p>To whom do you which to swear an oath to!? </p>
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading"><strong>Swear Fealty!</strong></h1>
+      <p class="lead text-muted"><strong>Haha! <%= @player.name%> You have decided to swear fealty to a noble Khan! A new Adventenure of potential vast riches await you!!!!</strong></p>
+    </div>
+  </section>
+<br><br><br>
+<br>
+<br>
+
+
+<div class="background">
+  <div class="transbox">
+<div class="center">
+
+<p><strong>To whom do you which to swear an oath to!? </strong></p>
 <br>
 <%= form_for @player do |f| %>
 <%= f.collection_select :khan_id, @khans, :id, :name %>
 <%= f.submit %>
 <% end %>
 
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
 
 
 
+</div>	
 

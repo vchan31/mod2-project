@@ -1,7 +1,28 @@
-<h2>Alas, <%=@player.name%> you've convinced your Khan that a rival Khan has besmirched his soverignty or honor!! Let battle be joined! and the unluckly Khan , the one who will feel the wrath and ire of you and your khan will be...</h2>
+<div class='battlenew'>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+  </div>
+<br><br>
+<br>
+<br>
 
+<section class="jumbotron text-center">
+    <div class="container">
+      <h2 class="jumbotron-heading"><strong>Alas, <%=@player.name%> you've convinced your Khan that a rival Khan has besmirched his soverignty or honor!! Let battle be joined! and the unluckly Khan , the one who will feel the wrath and ire of you and your khan will be...</strong></h2>
+    </div>
+  </section>
+<br><br><br>
 <br>
 <br>
+<br>
+
+<div class="background">
+  <div class="transbox">
+<div class="center">
+
 <%= form_for @battle do |f| %>
 
 
@@ -13,3 +34,9 @@ Your name: <%= f.collection_select :player_id, @players, :id, :name %><br>
 
 <% end %>
 
+</div>
+</div>
+</div>
+
+
+</div>	

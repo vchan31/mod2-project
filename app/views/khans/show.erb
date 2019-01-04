@@ -1,14 +1,45 @@
-<h1>  <%= @khan.name %> </h1>
+<div class='khanshow-bg'>
+<div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container d-flex justify-content-between">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"></svg></a>
+    </div>
+  </div>
+<br><br>
+<br>
+<br>
 
 
-Bio:<%= @khan.bio %><br>
+<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading"><strong><%= @khan.name %></strong></h1>
+      <p class="lead text-muted"><%= @khan.bio %></p>
+    </div>
+  </section>
+<br><br><br>
+<br>
+<br>
+
+<div class="background">
+  <div class="transbox">
+<div class="center">
 Army Size:<%= @khan.army_size %><br>
 Gold:<%= @khan.gold %><br>
 Experience:<%= @khan.experience %><br>
-Stars:<%= @khan.rating_star %><br>
+Stars:<%= @khan.rating_star %>
+</div>
+</div>
+</div>
+
+<br>
 <br>
 <br>
 Battles: <br>
 attacked: <br>
-been attacked by: <br>e
+been attacked by: <br>
 
+
+
+
+
+</div>
